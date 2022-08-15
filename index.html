@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Encriptador | Challenge 1</title>
+        <link rel="stylesheet" type="text/css" href="encriptador.css" /> 
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col s-10" >
+                   <img class="logo" src="img/logo.svg">            
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s-6">
+                    <div class="row">
+                        <div class="col s-10">
+                            <textarea id="textInput" class="textIn" placeholder="Ingrese el texto aqui"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s-10">
+                            <p><img src="img/Vector.png"> <span class="justText">Letras minúsculas y sin acentos</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s-5">
+                            <button class="btnEncriptar" onclick="encrypt()">Encriptar</button>
+                        </div>
+                        <div class="col s-5">
+                            <button class="btnDesencriptar" onclick="decrypt()">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s-4">
+                    <div id="noTxtFound" class="newText">
+                            <div class="img">
+                                <img class="notFoundImg" src="img/notFound.png">
+                            </div>
+                            <h3>Ningún mensaje fue encontrado</h3>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    
+                    <div id="result" class="newTextResult">
+                        <textarea id="newTextConvert" class="result" disabled></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s-10">
+                    <p><span class="creditText">Desarrollado por <strong>Fabián Saldías Nilo</strong> para <strong>Oracle ONE</strong> y <strong>Alura</strong></span></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="encriptador.js"></script>
+    <script src="decriptador.js"></script>
+
+</html>
